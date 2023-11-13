@@ -4,9 +4,7 @@
 meningioma AND [RNA-Seq]
 
 ## Data Sample for Preliminary Set Up:
-GSE136661: GSM4054990 - WHO III Meningioma; cDNA
-SRR:  SRX6777597
-
+GSE136661: 
 Obtaining Data Sample: http://www.ebi.ac.uk/ena/data/view/SRX6777597
 
 ## Anaconda Environment: pipeline
