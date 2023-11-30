@@ -1,0 +1,21 @@
+SRR,SAMN,cell_line,cell_type,genotype,treatment,ID,Organism,time
+SRR22829154,SAMN32331601,primary tumor,Human meningioma,NF2 loss/mut,None,32331601,Homo sapiens,adult brain tumor
+SRR22829153,SAMN32331600,primary tumor,Human meningioma,NF2 loss/mut,None,32331600,Homo sapiens,adult brain tumor
+SRR22829152,SAMN32331599,primary tumor,Human meningioma,NF2 loss/mut,None,32331599,Homo sapiens,adult brain tumor
+SRR22829151,SAMN32331598,primary tumor,Human meningioma,NF2 loss/mut,None,32331598,Homo sapiens,adult brain tumor
+SRR22829150,SAMN32331597,primary tumor,Human meningioma,NF2 loss/mut,None,32331597,Homo sapiens,adult brain tumor
+SRR22829149,SAMN32331596,primary tumor,Human meningioma,NF2 loss/mut,None,32331596,Homo sapiens,adult brain tumor
+SRR22829148,SAMN32331595,primary tumor,Human meningioma,NF2 loss/mut,None,32331595,Homo sapiens,adult brain tumor
+SRR22829147,SAMN32331594,primary tumor,Human meningioma,NF2 loss/mut,None,32331594,Homo sapiens,adult brain tumor
+SRR22829146,SAMN32331593,primary tumor,Human meningioma,NF2 loss/mut,None,32331593,Homo sapiens,adult brain tumor
+SRR22829145,SAMN32331592,primary tumor,Human meningioma,NF2 loss/mut,None,32331592,Homo sapiens,adult brain tumor
+SRR22829144,SAMN32331591,primary tumor,Human meningioma,TRAF7/AKT1 mut,None,32331591,Homo sapiens,adult brain tumor
+SRR22829143,SAMN32331590,primary tumor,Human meningioma,TRAF7/AKT1 mut,None,32331590,Homo sapiens,adult brain tumor
+SRR22829142,SAMN32331589,primary tumor,Human meningioma,TRAF7/AKT1 mut,None,32331589,Homo sapiens,adult brain tumor
+SRR22829141,SAMN32331588,primary tumor,Human meningioma,TRAF7/AKT1 mut,None,32331588,Homo sapiens,adult brain tumor
+SRR22829140,SAMN32331587,primary tumor,Human meningioma,TRAF7/AKT1 mut,None,32331587,Homo sapiens,adult brain tumor
+SRR22829139,SAMN32331586,primary tumor,Human meningioma,TRAF7/KLF4 mut,None,32331586,Homo sapiens,adult brain tumor
+SRR22829138,SAMN32331585,primary tumor,Human meningioma,TRAF7/KLF4 mut,None,32331585,Homo sapiens,adult brain tumor
+SRR22829137,SAMN32331584,primary tumor,Human meningioma,TRAF7/KLF4 mut,None,32331584,Homo sapiens,adult brain tumor
+SRR22829136,SAMN32331583,primary tumor,Human meningioma,TRAF7/KLF4 mut,None,32331583,Homo sapiens,adult brain tumor
+SRR22829135,SAMN32331582,primary tumor,Human meningioma,TRAF7/KLF4 mut,None,32331582,Homo sapiens,adult brain tumor

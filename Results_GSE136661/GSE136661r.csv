@@ -1,0 +1,81 @@
+SRR,SAMN,Cohort,Pathology,Tissue,Sex,ID,Organism,Age
+SRR10042693,SAMN12661878,Discovery,WHO I,Meningioma,female,12661878,Homo sapiens,35
+SRR10042694,SAMN12661871,Discovery,WHO II,Meningioma,female,12661871,Homo sapiens,69
+SRR10042695,SAMN12661865,Discovery,WHO I,Meningioma,female,12661865,Homo sapiens,68
+SRR10042633,SAMN12661864,Discovery,WHO I,Meningioma,female,12661864,Homo sapiens,69
+SRR10042634,SAMN12661863,Discovery,WHO I,Meningioma,female,12661863,Homo sapiens,66
+SRR10042635,SAMN12661862,Discovery,WHO I,Meningioma,female,12661862,Homo sapiens,63
+SRR10042636,SAMN12661861,Discovery,WHO I,Meningioma,male,12661861,Homo sapiens,59
+SRR10042637,SAMN12661860,Discovery,WHO I,Meningioma,female,12661860,Homo sapiens,62
+SRR10042638,SAMN12661859,Discovery,WHO I,Meningioma,female,12661859,Homo sapiens,33
+SRR10042640,SAMN12661857,Discovery,WHO I,Meningioma,female,12661857,Homo sapiens,63
+SRR10042641,SAMN12661856,Discovery,WHO I,Meningioma,female,12661856,Homo sapiens,62
+SRR10042642,SAMN12661855,Discovery,WHO I,Meningioma,female,12661855,Homo sapiens,59
+SRR10042643,SAMN12661853,Discovery,WHO I,Meningioma,male,12661853,Homo sapiens,78
+SRR10042644,SAMN12661852,Discovery,WHO I,Meningioma,female,12661852,Homo sapiens,62
+SRR10042645,SAMN12661851,Discovery,WHO I,Meningioma,female,12661851,Homo sapiens,45
+SRR10042646,SAMN12661850,Discovery,WHO I,Meningioma,male,12661850,Homo sapiens,69
+SRR10042647,SAMN12661849,Discovery,WHO I,Meningioma,male,12661849,Homo sapiens,63
+SRR10042648,SAMN12661848,Discovery,WHO I,Meningioma,female,12661848,Homo sapiens,66
+SRR10042649,SAMN12661847,Discovery,WHO I,Meningioma,male,12661847,Homo sapiens,57
+SRR10042650,SAMN12661846,Discovery,WHO I,Meningioma,male,12661846,Homo sapiens,61
+SRR10042676,SAMN12661845,Discovery,WHO I,Meningioma,female,12661845,Homo sapiens,81
+SRR10042682,SAMN12661844,Discovery,WHO I,Meningioma,female,12661844,Homo sapiens,28
+SRR10042683,SAMN12661843,Discovery,WHO II,Meningioma,male,12661843,Homo sapiens,64
+SRR10042684,SAMN12661842,Discovery,WHO II,Meningioma,female,12661842,Homo sapiens,48
+SRR10042685,SAMN12661841,Discovery,WHO I,Meningioma,female,12661841,Homo sapiens,59
+SRR10042686,SAMN12661840,Discovery,WHO I,Meningioma,female,12661840,Homo sapiens,69
+SRR10042687,SAMN12661839,Discovery,WHO I,Meningioma,male,12661839,Homo sapiens,58
+SRR10042688,SAMN12661837,Discovery,WHO I,Meningioma,male,12661837,Homo sapiens,33
+SRR10042689,SAMN12661836,Discovery,WHO I,Meningioma,male,12661836,Homo sapiens,70
+SRR10042690,SAMN12661835,Discovery,WHO I,Meningioma,male,12661835,Homo sapiens,78
+SRR10042691,SAMN12661834,Discovery,WHO I,Meningioma,female,12661834,Homo sapiens,69
+SRR10042692,SAMN12661833,Discovery,WHO II,Meningioma,male,12661833,Homo sapiens,69
+SRR10042662,SAMN12661831,Discovery,WHO I,Meningioma,female,12661831,Homo sapiens,60
+SRR10042663,SAMN12661830,Discovery,WHO I,Meningioma,female,12661830,Homo sapiens,61
+SRR10042664,SAMN12661829,Discovery,WHO I,Meningioma,female,12661829,Homo sapiens,42
+SRR10042665,SAMN12661828,Discovery,WHO I,Meningioma,female,12661828,Homo sapiens,61
+SRR10042666,SAMN12661827,Discovery,WHO I,Meningioma,male,12661827,Homo sapiens,49
+SRR10042667,SAMN12661826,Discovery,WHO II,Meningioma,male,12661826,Homo sapiens,65
+SRR10042668,SAMN12661825,Discovery,WHO I,Meningioma,female,12661825,Homo sapiens,81
+SRR10042669,SAMN12661824,Discovery,WHO I,Meningioma,male,12661824,Homo sapiens,57
+SRR10042670,SAMN12661823,Discovery,WHO I,Meningioma,female,12661823,Homo sapiens,63
+SRR10042671,SAMN12661822,Discovery,WHO I,Meningioma,female,12661822,Homo sapiens,68
+SRR10042672,SAMN12661821,Discovery,WHO I,Meningioma,male,12661821,Homo sapiens,50
+SRR10042673,SAMN12661820,Discovery,WHO I,Meningioma,female,12661820,Homo sapiens,39
+SRR10042674,SAMN12661819,Discovery,WHO I,Meningioma,female,12661819,Homo sapiens,61
+SRR10042675,SAMN12661818,Discovery,WHO I,Meningioma,female,12661818,Homo sapiens,57
+SRR10042677,SAMN12661817,Discovery,WHO I,Meningioma,female,12661817,Homo sapiens,66
+SRR10042678,SAMN12661816,Discovery,WHO II,Meningioma,male,12661816,Homo sapiens,72
+SRR10042679,SAMN12661815,Discovery,WHO I,Meningioma,female,12661815,Homo sapiens,52
+SRR10042680,SAMN12661814,Discovery,WHO I,Meningioma,female,12661814,Homo sapiens,50
+SRR10042681,SAMN12661813,Discovery,WHO II,Meningioma,female,12661813,Homo sapiens,57
+SRR10042621,SAMN12661812,Discovery,WHO I,Meningioma,female,12661812,Homo sapiens,49
+SRR10042622,SAMN12661811,Discovery,WHO I,Meningioma,female,12661811,Homo sapiens,54
+SRR10042623,SAMN12661810,Discovery,WHO I,Meningioma,female,12661810,Homo sapiens,66
+SRR10042624,SAMN12661809,Discovery,WHO I,Meningioma,female,12661809,Homo sapiens,41
+SRR10042625,SAMN12661808,Discovery,WHO I,Meningioma,female,12661808,Homo sapiens,67
+SRR10042626,SAMN12661807,Discovery,WHO I,Meningioma,female,12661807,Homo sapiens,41
+SRR10042627,SAMN12661806,Discovery,WHO I,Meningioma,male,12661806,Homo sapiens,75
+SRR10042628,SAMN12661805,Discovery,WHO I,Meningioma,female,12661805,Homo sapiens,47
+SRR10042629,SAMN12661804,Discovery,WHO I,Meningioma,female,12661804,Homo sapiens,68
+SRR10042630,SAMN12661803,Discovery,WHO I,Meningioma,male,12661803,Homo sapiens,68
+SRR10042631,SAMN12661802,Discovery,WHO I,Meningioma,female,12661802,Homo sapiens,58
+SRR10042632,SAMN12661801,Discovery,WHO I,Meningioma,male,12661801,Homo sapiens,79
+SRR10042762,SAMN12661800,Validation,WHO II,Meningioma,male,12661800,Homo sapiens,65
+SRR10042763,SAMN12661799,Validation,WHO II,Meningioma,female,12661799,Homo sapiens,49
+SRR10042756,SAMN12661798,Validation,WHO I,Meningioma,male,12661798,Homo sapiens,72
+SRR10042757,SAMN12661797,Validation,WHO I,Meningioma,male,12661797,Homo sapiens,18
+SRR10042758,SAMN12661796,Validation,WHO II,Meningioma,male,12661796,Homo sapiens,77
+SRR10042759,SAMN12661795,Validation,WHO I,Meningioma,female,12661795,Homo sapiens,42
+SRR10042760,SAMN12661794,Validation,WHO I,Meningioma,female,12661794,Homo sapiens,33
+SRR10042764,SAMN12661793,Validation,WHO I,Meningioma,female,12661793,Homo sapiens,63
+SRR10042765,SAMN12661792,Validation,WHO II,Meningioma,female,12661792,Homo sapiens,64
+SRR10042766,SAMN12661791,Recurrence,WHO II,Meningioma,not determined,12661791,Homo sapiens,72
+SRR10042767,SAMN12661790,Recurrence,WHO III,Meningioma,not determined,12661790,Homo sapiens,72
+SRR10042768,SAMN12661789,Recurrence,WHO III,Meningioma,not determined,12661789,Homo sapiens,72
+SRR10042769,SAMN12661788,Recurrence,WHO II,Meningioma,not determined,12661788,Homo sapiens,71
+SRR10042770,SAMN12661787,Recurrence,WHO III,Meningioma,not determined,12661787,Homo sapiens,72
+SRR10042771,SAMN12661786,Recurrence,WHO III,Meningioma,not determined,12661786,Homo sapiens,73
+SRR10042772,SAMN12661785,Recurrence,WHO III,Meningioma,not determined,12661785,Homo sapiens,74
+SRR10042773,SAMN12661784,Recurrence,WHO III,Meningioma,not determined,12661784,Homo sapiens,80

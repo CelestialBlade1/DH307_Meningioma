@@ -1,0 +1,193 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+```{r}
+
+library( "DESeq2" )
+library(ggplot2)
+```
+
+```{r}
+countData <- read.csv('transcript_count_matrix.csv', header = TRUE, sep = ",")
+countData <- data.frame(countData[,-1], row.names = countData[,1])
+```
+
+```{r}
+head(countData)
+```
+
+```{r}
+metaData <- read.csv('GSE221429.csv', header = TRUE, sep = ",")
+metaData <- data.frame(metaData[,-1], row.names = metaData[,1])
+head(metaData)
+```
+
+```{r}
+# Reorder the columns with the metadata so it all matches
+countData <- countData[, rownames(metaData)]
+head(countData)
+```
+
+```         
+```
+
+```{r message=FALSE, warning=FALSE}
+library("DESeq2")
+dds <- DESeqDataSetFromMatrix(countData = countData,
+                              colData = metaData,
+                              design = ~ genotype)
+dds
+```
+
+```{r message=FALSE, warning=FALSE}
+library("DESeq2")
+dds <- DESeqDataSetFromMatrix(countData = countData,
+                              colData = metaData,
+                              design = ~ genotype)
+dds
+```
+
+```{r}
+smallestGroupSize <- 3
+keep <- rowSums(counts(dds) >= 10) >= smallestGroupSize
+dds <- dds[keep,]
+dds
+```
+
+```{r}
+dds <- DESeq(dds)
+res <- results(dds)
+res
+```
+
+```{r}
+resOrdered <- res[order(res$pvalue),]
+summary(res)
+```
+
+```{r}
+vsdata <- vst(dds, blind=FALSE)
+plotPCA(vsdata, intgroup="genotype") #using the DESEQ2 plotPCA fxn we can
+```
+
+```{r}
+par(mfrow=c(1,1))
+# Make a basic volcano plot
+with(res, plot(log2FoldChange, -log10(pvalue), pch=20, main="Volcano plot", xlim=c(-3,3)))
+
+# Add colored points: blue if padj<0.01, red if log2FC>1 and padj<0.05)
+with(subset(res, padj<.01 ), points(log2FoldChange, -log10(pvalue), pch=20, col="blue"))
+with(subset(res, padj<.01 & abs(log2FoldChange)>2), points(log2FoldChange, -log10(pvalue), pch=20, col="red"))
+```
+
+```{r}
+hist(res$pvalue, breaks=20, col="grey50", border="white")
+```
+
+```{r}
+library(NMF)
+library(pheatmap)
+```
+
+```{r}
+# Assuming 'results' is a DESeqResults object
+top_genes <- head(order(res$log2FoldChange, decreasing = TRUE), 340)
+countData_top <- countData[top_genes, ]
+head(countData_top)
+```
+
+```{r}
+
+all(rowSums(countData_top) != 0)
+all(colSums(countData_top) != 0)
+countData_top <- countData_top[rowSums(countData_top) != 0, ]
+countData_top <- log2(countData_top + 1)  # Adding 1 to avoid log(0)
+
+all(rowSums(countData_top) != 0)
+all(colSums(countData_top) != 0)
+```
+
+```{r}
+
+# Assuming 'dds' is a DESeqDataSet object
+count_data <- counts(dds)
+
+# Extract count data for the top genes
+count_data <- count_data[top_genes,]
+
+# Assuming 'metaData' contains sample information
+heatmap_data <- countData_top
+
+
+# Customize the heatmap as needed
+pheatmap(heatmap_data, 
+         clustering_distance_rows = "correlation", 
+         clustering_distance_cols = "correlation",
+         annotation_col = metaData["genotype"],
+         show_rownames = FALSE,  # Do not display row labels
+         show_colnames = FALSE,   # Do not display column labels
+         annotation_colors = list(Pathology = c( "NF2 loss/mut"="red","TRAF7/AKT1 mut" ="green", "TRAF7/KLF4 mut" = "blue"))
+)
+```
+
+```{r}
+
+# Extract the basis matrix from the NMF result
+nmf_result <- nmf(countData_top, rank = 3, nrun = 1000)
+basis_matrix <- basis(nmf_result)
+
+# Perform hierarchical clustering on the basis matrix
+hclust_result <- hclust(dist(cor(basis_matrix)))
+
+# Cut the dendrogram into clusters (adjust the number of clusters as needed)
+num_clusters <- 3
+clusters <- cutree(hclust_result, k = num_clusters)
+
+
+```
+
+```{r}
+# Visualize the clusters in a color vector
+cluster_colors <- c("lightyellow", "pink", "lavender")
+
+
+# Create a color vector for samples based on their cluster assignment
+sample_colors <- cluster_colors[clusters]
+
+# Visualize the heatmap with sample colors
+pheatmap(heatmap_data,
+         clustering_distance_rows = "correlation",
+         clustering_distance_cols = "correlation",
+         show_rownames = FALSE,  # Do not display row labels
+         show_colnames = FALSE   # Do not display column labels
+         )
+```
+
+```{r}
+plotMA(res, ylim=c(-2,2))
+```
+
+```{r}
+write.csv(as.data.frame(resOrdered), 
+          file="condition_treated_results.csv")
+```
+
+```{r}
+library("vsn")
+ntd <- normTransform(dds)
+
+meanSdPlot(assay(ntd))
+```
+
+```{r}
+select <- order(rowMeans(counts(dds,normalized=TRUE)),
+                decreasing=TRUE)[1:20]
+df <- as.data.frame(colData(dds)["genotype"])
+pheatmap(assay(ntd)[select,], cluster_rows=FALSE, show_rownames=TRUE, show_colnames=FALSE,
+         cluster_cols=FALSE, annotation_col=df)
+```
+
+```         
+```
